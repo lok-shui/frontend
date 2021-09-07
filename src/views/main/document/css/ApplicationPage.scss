@@ -1,0 +1,298 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.ApplicatePage {
+  .bannerBg {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+      180deg,
+      rgba(34, 47, 68, 1) 0%,
+      rgba(35, 47, 70, 1) 100%
+    );
+    .bannerBox {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .leftWrap {
+        width: 680px;
+        height: 100%;
+        color: white;
+        text-align: left;
+        margin-right: 19px;
+        z-index: 1;
+        .size {
+          font-size: 32px;
+          margin: 73px auto 14px 0;
+        }
+        .desc {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .rightWrap {
+        position: absolute;
+        width: 1200px;
+        height: 300px;
+        // border: 1px solid lightblue;
+        // height: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          // object-fit: contain;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  .consultDiv {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    .consultBtn {
+      position: relative;
+      width: 1200px;
+      text-align: left;
+      margin: 0 auto;
+      margin-top: -20px;
+      button {
+        border: none;
+        color: white;
+        width: 112px;
+        height: 40px;
+        border-radius: 4px;
+        background: linear-gradient(
+          169deg,
+          rgba(244, 50, 91, 1) 0%,
+          rgba(220, 8, 22, 1) 100%
+        );
+      }
+    }
+  }
+  .thesis {
+    width: 100%;
+    min-height: calc(100vh - 840px);
+    .tabStyle {
+      /deep/.ant-tabs-bar {
+        margin: 0;
+      }
+      .tabPane {
+        margin: 0 auto;
+        .versions {
+          width: 100%;
+          height: 809px;
+          background: linear-gradient(
+            180deg,
+            rgba(240, 245, 252, 1) 0%,
+            rgba(241, 246, 252, 1) 100%
+          );
+          .controlBox {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            .versionWrap {
+              width: 526px;
+              height: 612px;
+              margin-right: 62px;
+            }
+            .rightDesc {
+              width: 588px;
+              text-align: left;
+              .div1 {
+                font-size: 30px;
+              }
+              .div2 {
+                color: rgba(0, 0, 0, 0.45);
+                line-height: 26px;
+                font-size: 16px;
+                margin: 16px auto 56px 0;
+              }
+              .div3 {
+                display: flex;
+                button {
+                  width: 112px;
+                  height: 40px;
+                  background: rgba(255, 255, 255, 0);
+                  border-radius: 4px;
+                  border: 1px solid rgba(220, 8, 22, 1);
+                  margin-right: 36px;
+                  color: rgba(220, 8, 22, 1);
+                }
+              }
+            }
+          }
+        }
+        .panelControl {
+          display: flex;
+          justify-content: space-between;
+          width: 1200px;
+          margin: 0 auto;
+          margin-bottom: 78px;
+          .panel {
+            width: 384px;
+            height: 312px;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+            border-radius: 12px;
+            // border: 1px solid rgba(227, 231, 238, 0.35);
+            margin-top: -100px;
+            padding: 40px;
+            text-align: left;
+            .panelImg {
+              width: 80px;
+              height: 80px;
+            }
+            .panelTheme {
+              font-size: 24px;
+              color: rgba(0, 0, 0, 0.85);
+              margin: 32px auto 9px 0;
+            }
+            .panelDesc {
+              height: 78px;
+              font-size: 16px;
+              color: rgba(0, 0, 0, 0.45);
+              line-height: 26px;
+              overflow-y: auto;
+            }
+          }
+        }
+      }
+    }
+    .noTabNav {
+      @extend .tabStyle;
+      /deep/.ant-tabs-nav-container {
+        display: none;
+      }
+    }
+    .noContent {
+      margin-top: 400px;
+    }
+  }
+
+  .relation {
+    margin: 18px auto 160px auto;
+    width: 1200px;
+    text-align: left;
+    .relationText {
+      width: 100%;
+
+      line-height: 26px;
+      margin-bottom: 19px;
+      img {
+        max-height: 26px;
+      }
+    }
+    .relationWrap {
+      display: flex;
+
+      .relationPanel {
+        width: 282px;
+        height: 220px;
+        padding: 40px 39px;
+        margin-right: 24px;
+        border: 1px solid rgba(227, 231, 238, 0.35);
+        box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+        background: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .Rtheme {
+          font-size: 20px;
+          color: rgba(46, 52, 77, 0.85);
+          line-height: 28px;
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+          box-shadow: 0px 8px 19px 0px rgba(219, 157, 157, 0.18);
+
+          .Rtheme {
+            color: #dc0816;
+          }
+        }
+        .Rcontent {
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 26px;
+          width: 204px;
+          height: 104px;
+          background: rgba(255, 255, 255, 1);
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          // overflow-y: auto;
+          -webkit-line-clamp: 4;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+        }
+      }
+    }
+  }
+  .character {
+    width: 100%;
+    height: 560px;
+    background: #f8faff;
+    // padding: 80px auto 133px auto;
+    padding-top: 80px;
+    padding-bottom: 133px;
+    .characterWrap {
+      margin: 0 auto;
+      width: 1200px;
+      height: 100%;
+      text-align: left;
+      .characterTitle {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 24px;
+        line-height: 33px;
+        .redLine {
+          width: 4px;
+          height: 20px;
+          margin-right: 16px;
+          display: inline-block;
+          background: rgba(220, 8, 22, 1);
+        }
+      }
+      .characterList {
+        display: flex;
+        justify-content: space-around;
+        .characterItem {
+          width: 180px;
+          .cImg,
+          .cTheme {
+            text-align: center;
+          }
+          .cImg {
+            width: 80px;
+            height: 80px;
+            margin: 30px auto 0 auto;
+            img {
+              max-width: 100%;
+            }
+          }
+          .cTheme,
+          .cContent {
+            font-size: 16px;
+          }
+          .cTheme {
+            font-weight: bold;
+            margin: 24px auto 19px auto;
+          }
+          .cContent {
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}

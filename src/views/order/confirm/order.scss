@@ -1,0 +1,349 @@
+.bgColor {
+    width: 10rem;
+    height: 100%;
+    background: linear-gradient(180deg,
+            rgba(240, 245, 255, 1) 0%,
+            rgba(249, 251, 255, 1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.orderlogin,
+.orderConfirm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.top {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    padding: 0.133rem 0.45rem;
+    font-size: 0.453rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    z-index: 999;
+}
+
+.contern {
+    width: 100%;
+    position: absolute;
+    top: 0.467rem;
+    bottom: 1.2rem;
+    overflow-y: scroll;
+}
+
+.login-contain {
+    padding: 0 0.427rem;
+    width: 100%;
+    height: calc(100vw * 0.71);
+    background-color: #f0f2f5;
+    // background: url("@/assets/order/login_header_bg.png") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    .tittext {
+        text-align: left;
+        padding: 1.653rem 0.213rem 0;
+        margin-bottom: 1.33rem;
+
+        b {
+            font-size: 0.76rem;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 0.78rem;
+        }
+
+        .text {
+            margin-top: 0.48rem;
+            font-size: 0.373rem;
+            font-weight: 700;
+            color: rgba(51, 51, 51, 0.8);
+            line-height: 0.56rem;
+        }
+
+        .content {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            color: rgba(51, 51, 51, 0.5);
+
+            .contentword {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 0 5px;
+
+                span {
+                    color: rgba(220, 8, 22, 1);
+                }
+            }
+        }
+    }
+
+    .login-form {
+        // width: 343px;
+        height: 80px;
+        background-color: #fff;
+        box-shadow: 0 10px 30px -8px rgba(54, 131, 94, 0.2);
+        font-size: 0.427rem;
+
+        // border-radius: 12px;
+        .form-contain {
+            text-align: left;
+
+            .login-btn {
+                width: 9.15rem;
+                height: 1.07rem;
+                line-height: 1.07rem;
+                font-size: 0.56rem;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    /deep/.ant-form-item {
+        margin-bottom: 0;
+    }
+
+    /deep/.ant-input {
+        border: none;
+        outline: none;
+        height: 1.33rem;
+        font-size: 0.42rem
+    }
+
+    /deep/.ant-input-prefix {
+        display: none;
+    }
+
+    /deep/.ant-btn {
+        margin-top: 50px;
+        height: 80px;
+        border-radius: 40px;
+        font-size: 32px;
+    }
+
+    /deep/.ant-input-affix-wrapper .ant-input:focus {
+        border: none;
+        border-bottom: 1px solid white !important;
+        box-shadow: none;
+    }
+
+    /deep/.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+        border-color: #fff;
+    }
+}
+
+.banner {
+    height: 5.33rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .consult {
+        display: flex;
+        position: absolute;
+        bottom: 0.267rem;
+        box-shadow: 0px 15px 60px 20px rgba(0, 0, 0, 0.03), 0px 11px 35px 0px rgba(0, 0, 0, 0.05), 0px 8px 20px -10px rgba(0, 0, 0, 0.08);
+        font-size: 0.373rem;
+        background-color: #fff;
+        border-radius: 0.6rem;
+
+        .consult_l {
+            width: 5.95rem;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .consult_r {
+            width: 3.2rem;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            background: rgba(243, 41, 70, 1);
+            color: rgba(255, 255, 255, 1);
+            border-radius: 0 45px 45px 0;
+        }
+    }
+}
+
+.usernews {
+    // width: 100%;
+    height: 2.48rem;
+    padding: 0.533rem 0 0.453rem 0.453rem;
+    font-size: 0.427rem;
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 0.533rem;
+
+    .usercontent {
+        text-align: left;
+        line-height: 0.6rem;
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+
+        .usercontent_l {
+            font-size: 0.373rem;
+            width: 1.493rem;
+            color: rgba(165, 165, 165, 1);
+            margin-right: 0.32rem;
+        }
+    }
+}
+
+.service {
+    padding: 0 0.32rem;
+
+    b {
+        font-size: 0.373rem;
+        text-align: left;
+        display: block;
+        margin-bottom: 0.213rem;
+    }
+
+    .servicelist {
+        width: 100%;
+        // height: 4.48rem;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0.2rem 0.8rem 0.267rem rgba(0, 0, 0, 0.03), 0px 0.147rem 0.467rem 0px rgba(0, 0, 0, 0.05), 0px 0.107rem 0.267rem -0.133rem rgba(0, 0, 0, 0.08);
+        border-radius: 0.213rem;
+        padding: 0.64rem 0.64rem 0.32rem;
+        margin-bottom: 5%;
+
+        .servicecontent_l {
+            width: 1.493rem;
+            font-weight: 400;
+            color: rgba(165, 165, 165, 1);
+            line-height: 0.533rem;
+            margin-right: 0.213rem;
+            text-align: left;
+            width: 50%;
+        }
+
+        .header {
+            font-size: 0.427rem;
+            font-weight: 700;
+            margin-bottom: 0.64rem;
+        }
+
+        .text {
+            width: 50%;
+            font-size: 0.373rem;
+            text-align: left;
+            line-height: 0.533rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .pf {
+            padding-left: 0.333rem;
+        }
+
+        .priceicon {
+            margin-right: 0.133rem;
+            font-size: 0.36rem;
+            color: rgba(243, 41, 70, 1);
+
+        }
+
+        .detale {
+            color: rgba(165, 165, 165, 1);
+            cursor: pointer;
+            margin-top: 0.267rem;
+            font-size: 0.32rem;
+        }
+
+    }
+
+    .introduce {
+        .servicenews {
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            word-break: break-all;
+            letter-spacing: 1px;
+            font-size: 0.346rem;
+            color: rgba(0, 0, 0, 0.45);
+            font-weight: 400;
+        }
+    }
+
+    .total {
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0.2rem 0.8rem 0.267rem rgba(0, 0, 0, 0.03), 0px 0.147rem 0.467rem 0px rgba(0, 0, 0, 0.05), 0px 0.107rem 0.267rem -0.133rem rgba(0, 0, 0, 0.08);
+        border-radius: 0.213rem;
+        margin-top: 0.32rem;
+        padding: 0.6rem;
+        font-size: 0.373rem;
+        font-weight: 700;
+        box-sizing: border-box;
+        margin-bottom: 0.32rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .actual {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+.footer {
+    width: 100%;
+    height: 1.333rem;
+    margin-top: 0.93rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+
+    .footer_l {
+        width: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.427rem;
+        background-color: #fff;
+
+        .phone {
+            width: 0.747rem;
+            height: 0.747rem;
+            font-size: 0.5rem;
+            color: #fff;
+            background-color: rgba(243, 41, 70, 1);
+            border-radius: 50%;
+            margin-right: 0.32rem;
+        }
+
+        .footer_user {
+            text-align: left;
+        }
+    }
+
+    .footer_r {
+        width: 50%;
+        background: rgba(243, 41, 70, 1);
+        box-shadow: 0px 0.2rem 0.8rem 0.267rem rgba(0, 0, 0, 0.03), 0px 0.147rem 0.467rem 0px rgba(0, 0, 0, 0.05), 0px 0.107rem 0.267rem -0.133rem rgba(0, 0, 0, 0.08);
+        font-size: 0.48rem;
+        color: #fff;
+        font-weight: 500;
+        height: 1.333rem;
+        line-height: 1.333rem;
+
+    }
+}

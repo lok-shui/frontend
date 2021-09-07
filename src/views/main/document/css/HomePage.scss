@@ -1,0 +1,696 @@
+@keyframes mymove
+{
+  from {top:0px;}
+  to {top:-20px;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+  from {top:0px;}
+  to {top:-20px;}
+}
+
+.ant-carousel /deep/ .custom-slick-arrow {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #fff;
+  background-color: rgba(31, 45, 61, 0.11);
+  opacity: 0.3;
+}
+
+.ant-carousel /deep/ .slick-dots-bottom {
+  bottom: 16px;
+}
+
+/deep/.slick-dots-bottom {
+  li {
+    height: 10px;
+    width: 100px;
+
+    button {
+      width: 80px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(196, 196, 196, 0.52);
+      opacity: 1;
+    }
+  }
+}
+
+/deep/.ant-carousel .slick-dots li.slick-active button {
+  width: 50px;
+  height: 4px;
+  background: rgba(196, 196, 196, 0.52);
+  border-radius: 2px;
+  background: #dc0816;
+  opacity: 1;
+}
+
+/deep/.ant-carousel .slick-slider .slick-track,
+.ant-carousel .slick-slider .slick-list {
+  height: 480px;
+}
+
+.core {
+  /deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+    height: 80px;
+  }
+
+  /deep/ .ant-tabs-nav {
+    div {
+      width: 1200px;
+      text-align: left;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  /deep/.ant-tabs-bar {
+    border-left: none;
+    margin: 0;
+    border-top: none;
+    border-right: transparent;
+  }
+
+  /deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+    line-height: 80px;
+    height: 80px;
+    border-color: transparent;
+    background: #fff;
+    margin-right: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #dc0816;
+  }
+
+  /deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+    height: 80px;
+    border-color: #dc0816;
+    border-bottom: 1px solid #fff;
+  }
+
+}
+
+.application {
+  /deep/.ant-tabs-bar {
+    margin-bottom: 40px;
+  }
+
+  /deep/.ant-tabs-bar {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.leftWrap {
+  /deep/ .ant-tabs-nav .ant-tabs-tab {
+    color: white;
+    border-bottom: 2px solid #242529;
+  }
+
+  // 选中
+  /deep/ .ant-tabs-nav .ant-tabs-tab-active {
+    color: #dc0816;
+    border-bottom: none;
+  }
+
+  // tab默认
+  /deep/ .ant-tabs-bar {
+    border-bottom: none;
+  }
+
+  // 切换时一闪而过的样式
+  /deep/ .ant-tabs .ant-tabs-top-content>.ant-tabs-tabpane-inactive,
+  .ant-tabs .ant-tabs-bottom-content>.ant-tabs-tabpane-inactive {
+    border: none;
+  }
+
+  /deep/.ant-tabs .ant-tabs-top-content>.ant-tabs-tabpane,
+  .ant-tabs .ant-tabs-bottom-content>.ant-tabs-tabpane {
+    color: white;
+  }
+
+  .tabCaption {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .tabBox {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    // 样式修改
+    .tabItems {
+      width: 384px;
+      height: 312px;
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+      border-radius: 12px;
+      color: #000;
+      border: 1px solid rgba(227, 231, 238, 0.35);
+      padding: 40px;
+      text-align: center;
+
+      img {
+        max-width: 80px;
+        max-height: 80px;
+      }
+
+      .theme {
+
+        margin: 32px auto 9px auto;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .describe {
+        width: 304px;
+        height: 86px;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.45);
+        // height: 78px;
+        // overflow-y: auto;
+        line-height: 26px;
+
+        b {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .tabGroup {
+    width: 1192px;
+    height: 312px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+    border-radius: 12px;
+    border: 1px solid rgba(227, 231, 238, 0.35);
+    margin-top: 20px;
+    padding: 30px 40px 12px 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+
+    .leftImg {
+      width: 530px;
+      height: 270px;
+
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    .rightText {
+      width: 478px;
+
+      .rBolds {
+        width: 392px;
+        font-weight: bold;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 33px;
+        margin: 34px 0 36px 0;
+      }
+
+      .rGrays {
+        height: 94px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.45);
+
+        b {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .tabProperty {
+    width: 1192px;
+    margin-left: 8px;
+
+    .topText {
+      margin: 32px 0 35px 0;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+    }
+
+    .tabControl {
+      display: flex;
+      justify-content: space-between;
+
+      .tabPanel {
+        width: 282px;
+        height: 256px;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+        border-radius: 12px;
+        border: 1px solid rgba(227, 231, 238, 0.35);
+        text-align: center;
+
+        .tabTheme {
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: bold;
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .tabLine1 {
+          width: 80px;
+          height: 80px;
+          margin: 40px auto 24px auto;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .tabLine2 {
+          font-size: 16px;
+          color: rgba(0, 0, 0, 0.85);
+        }
+
+        .single {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+$marginBot: 100px;
+.homePage {
+  // margin-top: 74px;
+  .swiperWrap {
+    width: 100%;
+    height: 480px;
+    margin-bottom: $marginBot;
+    cursor: pointer;
+
+    .swiperItem {
+      width: 100%;
+      height: 480px;
+      text-align: center;
+
+      img {
+        //  max-width: 100%;
+        max-height: 480px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .arrowWrap {
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    height: 80px;
+
+    .arrows {
+      width: 1800px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 50px;
+      color: #dc0816;
+    }
+  }
+
+  .application,
+  .core,
+  .partners,
+  .companyValues,
+  .miRai {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: $marginBot;
+    button {
+      outline: none;
+      border: none;
+      color: #DC0816;
+      font-size:16px;
+      font-family:PingFangSC-Regular,PingFang SC;
+      border: none;
+      width:120px;
+      height:40px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 10px 24px 0px rgba(219,157,157,0.18);
+      border-radius:4px;
+    }
+  }
+
+
+  .core {
+    /deep/.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+      background: rgba(254, 252, 252, 1);
+    }
+
+    .lineP {
+      height: 26px;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 26px;
+      margin: 16px auto 40px 21px;
+      text-align: left;
+    }
+
+    .tabWrap {
+      width: 100%;
+      height: 439px;
+      // margin-bottom: 186px;
+
+      .tabImg {
+        max-width: 48px;
+        max-height: 48px;
+      }
+
+      .tabName {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 22px;
+        margin-left: 12px;
+      }
+
+      .tabContent {
+        min-height: 359px;
+        border: 1px solid #dc0816;
+        border-top: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        background: rgba(254, 252, 252, 1);
+        padding:0 105px;
+        box-sizing: border-box;
+        .btn {
+          width: 80px;
+          height: 80px;
+        }
+        .btn-l{
+          @extend .btn;
+          position: absolute;
+          left: 0;
+        }
+        .btn-r {
+          @extend .btn;
+          position: absolute;
+          right: 0;
+        }
+        .cardItem {
+          width: 282px;
+          height: 220px;
+          box-shadow: 0px 1px 5px 0px rgba(214, 177, 180, 0.09);
+          border: 1px solid rgba(227, 231, 238, 0.35);
+          padding: 40px;
+          text-align: left;
+          margin-right: 75px;
+          cursor: pointer;
+
+          &:hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 8px 19px 0px rgba(219, 157, 157, 0.18);
+
+            .names {
+              color: #dc0816;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .names {
+            color: rgba(46, 52, 77, 0.85);
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+          }
+
+          .tabDesc {
+            width: 204px;
+            height: 104px;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 26px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            // overflow-y: auto;
+            -webkit-line-clamp: 4;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .application {
+    // height: 460px;
+    margin: 100px auto 100px auto;
+
+    .gray {
+      color: rgba(0, 0, 0, 0.45);
+      line-height: 26px;
+      font-size: 16px;
+      margin: 16px auto 40px 21px;
+      text-align: left;
+    }
+
+    .cardControl {
+      display: flex;
+
+      .cardItem {
+        width: 384px;
+        height: 384px;
+
+        margin-right: 24px;
+
+        .bgItem {
+          width: 384px;
+          height: 384px;
+          position: absolute;
+          z-index: 1;
+          border-radius: 4px;
+          overflow: hidden;
+
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+
+        .txtBox {
+          width: 384px;
+          height: 384px;
+          position: relative;
+          z-index: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: rgba(255, 255, 255, 1);
+          border-radius: 4px;
+          padding-top: 66px;
+          padding-bottom: 48px;
+          .txtControl {
+            .whiteName,
+            .whiteDesc,
+            .redDetail {
+              width: 384px;
+            }
+            .whiteName {
+              font-size: 24px;
+              font-weight: bold;
+            }
+            .animate {
+              display: none;
+              position: relative;
+              .whiteDesc {
+                text-align: left;
+                width: 240px;
+                max-height: 156px;
+                overflow-y: auto;
+                font-size: 16px;
+                margin: 25px auto 16px auto;
+              }
+              .redDetail {
+                width: 120px;
+                height: 40px;
+                line-height: 40px;
+                box-shadow: 0px 10px 24px 0px rgba(219, 157, 157, 0.18);
+                border-radius: 4px;
+                color: rgba(254, 60, 73, 1);
+                border: 1px solid rgba(255, 93, 104, 1);
+                cursor: pointer;
+                margin: 0 auto;
+              }
+             
+            }
+          }
+          
+          &:hover {
+            background: rgba(0, 0, 0, 0.65);
+            .txtControl {
+              position:relative;
+              margin-top: 25px;
+              display: block;
+              animation: mymove 1;
+              animation-duration: .2s;
+              animation-fill-mode:forwards;
+              .animate {
+                display: block;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+      }
+    }
+  }
+
+  .companyBg {
+    height: 514px;
+    background: rgba(1, 2, 6, 1);
+    margin-bottom: 298px;
+    .centerWrap {
+      position: relative;
+      width: 1200px;
+      margin: 0 auto;
+      text-align: left;
+
+      .rightBg {
+        width: 760px;
+        height: 514px;
+        position: absolute;
+        right: 0;
+        // background: url("../../../assets/images/v2/home_bg.png") no-repeat;
+      }
+
+      .leftWrap {
+        padding-top: 100px;
+        position: relative;
+        // margin-bottom: 203px;
+
+        .line {
+          width: 4px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 16px;
+          background: #dc0816;
+        }
+
+        .bolds {
+          color: #fff;
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 45px;
+          letter-spacing: 2px;
+        }
+
+        .line2 {
+          width: 568px;
+          height: 52px;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.5);
+          line-height: 26px;
+          margin: 16px auto 100px 16px;
+        }
+      }
+    }
+  }
+
+  .partners {
+    margin-bottom: $marginBot;
+
+    .partner {
+      width: 100%;
+      height: 353px;
+      // border: 1px solid #dc0816;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .companyValues {
+    height: 186px;
+    display: flex;
+    align-items: center;
+
+    .companyBrief {
+      height: 80px;
+      flex: 1;
+      cursor: pointer;
+
+      img {
+        max-width: 30px;
+        max-height: 30px;
+      }
+
+      .text {
+        color: rgba(46, 52, 77, 0.85);
+        font-size: 16px;
+        margin-top: 23px;
+      }
+
+      &:nth-child(2) {
+        border-left: 1px solid rgba(220, 8, 22, 0.3);
+        border-right: 1px solid rgba(220, 8, 22, 0.3);
+      }
+    }
+  }
+
+  .miRai {
+    margin: 0 auto 100px auto;
+    // border: 1px solid #dc0816;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background: url("../../../assets/images/v2/cooperative_bg.png") no-repeat;
+
+    .word {
+      font-weight: bold;
+      width: 554px;
+      height: 40px;
+      font-size: 30px;
+      color: rgba(53, 23, 23, 0.85);
+      margin: auto 190px auto 204px;
+      text-align: left;
+    }
+
+   
+  }
+
+  .title {
+    height: 45px;
+    text-align: left;
+    line-height: 45px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: bold;
+
+    .line {
+      width: 4px;
+      display: inline-block;
+      height: 20px;
+      margin-right: 16px;
+      background: #dc0816;
+    }
+  }
+}

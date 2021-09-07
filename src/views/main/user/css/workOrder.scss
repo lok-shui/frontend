@@ -1,0 +1,288 @@
+// 右边内容
+.user-contain {
+    padding: 24px 32px;
+    text-align: left;
+  
+    .title {
+      color: #000;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 24px;
+    }
+  
+    .titleSize {
+      font-size: 18px;
+    }
+  
+    .list-contain {
+      .operation-contain {
+        margin-bottom: 24px;
+  
+        .operation {
+          display: flex;
+          align-items: center;
+          margin-right: 30px;
+        }
+  
+        button {
+          margin-right: 16px;
+        }
+  
+        form {
+          text-align: left;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+      }
+  
+      // 我的工单
+      .topLine {
+        // max-width: 90%;
+        // padding-right: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        .newOrderBtn {
+          width:106px;
+          height:32px;
+          background:rgba(220,8,22,1);
+          border-radius:4px;
+          color: #fff;
+        }
+      }
+      .inputWidth {
+        width: 272px;
+      }
+      // .ant-table-wrapper {
+      //   max-width: 90%;
+      // }
+    }
+  
+    // 我的工单-form
+    .workOrderForm {
+      color:rgba(0,0,0,0.65);
+      /deep/.ant-form-item {
+        margin-bottom: -24px;
+        padding-bottom: 40px;
+        padding-top: 32px;
+        border-bottom: 1px solid #E8E8E8;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+      /deep/ .ant-form-item-label {
+        margin-bottom: 16px;
+        font-family:PingFangSC-Medium,PingFang SC;
+        font-weight:600;
+        line-height:24px;
+        height: 24px;
+        label {
+          font-size: 18px;
+          &::after {
+            content: '';
+          }
+        }
+      }
+      .subLabel {
+        position: relative;
+        top: 56px;
+        left: 84px;
+        max-width: 400px;
+        line-height: 24px;
+        height: 24px;
+        color: rgba(0,0,0,0.45);
+        // border:1px solid gray;
+      }
+     
+      .textareaStyle {
+        width:757px;
+        min-height:194px;
+        background:rgba(255,255,255,1);
+        border-radius:2px;
+        border:1px solid rgba(0,0,0,0.15);
+        resize: none;
+        outline: none;
+      }
+      .createOrder {
+        margin-top: 16px;
+        .cancelBtn {
+          margin-left: 16px;
+        }
+      }
+  
+    }
+  
+    .flex {
+      display: flex;
+    }
+
+  }
+
+// workOrderList  ant-modal-close-x
+// 表头
+/deep/.ant-table-header-column {
+  height:22px;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:600;
+  color:rgba(0,0,0,1);
+  line-height:22px;
+}
+/deep/.ant-modal-close-x {
+  display: none;
+}
+/deep/.ant-tabs .ant-tabs-top-content > .ant-tabs-tabpane {
+  display: flex;
+}
+.statusBg {
+  height:22px;
+  font-size: 12px;
+  padding: 2px 8px;
+  background:#f5f4f4;
+  border-radius:11px;
+}
+.blueStatus {
+  color: #1890ff;
+  background: #EDF6FF;
+}
+.greenStatus {
+  color: #19bf6e;
+  background: #E8F9F1;
+}
+/deep/.ant-form-item label {
+  color: rgba(0, 0, 0, 0.65);
+}
+// 提交时间
+/deep/ .ant-table-body table tbody td {
+  &:last-child {
+    width: 300px;
+  }
+}
+
+// workOrderNew
+/deep/.ant-modal {
+  min-height: calc(100vh);
+  top: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+/deep/.ant-modal-content {
+  width: 352px;
+  height: 205px;
+}
+
+/deep/.ant-modal-footer {
+  text-align: center;
+  border-top: 0;
+}
+/deep/.ant-modal {
+  .ant-btn {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+.maxImg {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.boldWord {
+  height: 24px;
+  font-size: 18px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 24px;
+  margin-top: 17px;
+  text-align: center;
+}
+.topLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.typeCard {
+  width: 192px;
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 1px solid rgba(232, 232, 232, 1);
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  outline: none;
+  font-size: 16px;
+  span {
+    margin-left: 6px;
+  }
+  .iconSize {
+    font-size: 20px;
+  }
+  .iconBox {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+  }
+  // filter: drop-shadow(x偏移, y偏移, 模糊大小, 色值);
+  .blackIcon {
+    position: relative;
+    //  left: -30px;
+    border-right: 30px solid transparent;
+    -webkit-filter: drop-shadow(30px 0 0 #ccc);
+    filter: drop-shadow(30px 0 0 #000);
+  }
+  .redIocn {
+    display: none;
+    position: relative;
+    // left: -30px;
+    border-right: 30px solid transparent;
+    -webkit-filter: drop-shadow(30px 0 0 #ccc);
+    filter: drop-shadow(30px 0 0 #dc0816);
+  }
+
+  &:focus {
+    border: 1px solid #dc0816;
+  }
+}
+.focusType {
+  @extend .typeCard;
+  color: #dc0816;
+  border: 1px solid #dc0816;
+  .redIocn {
+    display: block;
+    left: -30px;
+  }
+}
+// 表格公共样式
+/deep/.ant-table-tbody>tr>td {
+  background: #fff !important;
+}
+
+/deep/.ant-table-tbody>tr:hover>td {
+  background: rgba(247, 249, 251, 1) !important;
+  box-shadow: 0px -1px 0px 0px rgba(232, 232, 232, 1);
+}
+
+/deep/.ant-table-column-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  line-height: 22px;
+}
+/deep/.ant-tabs-nav-scroll{
+  background-color: #F7F9FB;
+}

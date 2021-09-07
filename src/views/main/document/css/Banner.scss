@@ -1,0 +1,66 @@
+.bg {
+  width: 940px;
+  height: 440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .bgImg {
+    position: absolute;
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      object-fit: cover;
+      max-height: 400px;
+    }
+  }
+
+  .humanFace {
+    width: 486px;
+    text-align: left;
+    z-index: 12;
+    button {
+      border: none;
+    }
+    .face {
+      color: #010b09;
+      font-weight: bold;
+      font-size: 32px;
+      height: 45px;
+      line-height: 45px;
+      margin: 110px auto 23px auto;
+    }
+    .message {
+      color: #000;
+      overflow: auto;
+      margin-bottom: 40px;
+      opacity: 0.6;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .cooperate {
+      width: 112px;
+      height: 40px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: rgba(255, 255, 255, 1);
+      background: linear-gradient(
+        169deg,
+        rgba(244, 50, 91, 1) 0%,
+        rgba(220, 8, 22, 1) 100%
+      );
+      margin-right: 24px;
+    }
+    .api {
+      height: 22px;
+      line-height: 22px;
+      font-size: 16px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(220, 8, 22, 1);
+      margin-right: 20px;
+    }
+  }
+}

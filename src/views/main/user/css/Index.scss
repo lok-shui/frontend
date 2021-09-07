@@ -1,0 +1,125 @@
+
+a {
+  .hoverImg {
+    display: none;
+  }
+  .defaultImg {
+    display: block;
+  }
+  &:hover {
+    .hoverImg {
+      display: block;
+    }
+    .defaultImg {
+      display: block;
+    }
+  }
+}
+
+.ant-breadcrumb {
+  position: absolute;
+  left: 224px;
+  top: 6px;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  font-weight: bold;
+}
+// 去掉默认的右边框线
+.ant-menu-inline {
+  border-right: none;
+  .ant-menu-item,
+  .ant-menu-item-selected {
+    text-align: left;
+  }
+}
+
+/deep/ .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: none;
+  border-right: 0;
+}
+/deep/.ant-form-item-label {
+  font-weight: bold;
+}
+
+.bgContainer {
+  position: relative;
+  // min-height: calc(100vh - 394px);
+  min-height: calc(100vh - 326px);
+  // padding-bottom: 20px;
+  width: 100%;
+  overflow: auto;
+  background: rgba(240, 242, 245, 1);
+  // 个人信息的公共样式
+  .userContainer {
+    width: 100%;
+    // height: 96%;
+    min-height: calc(100vh - 326px);
+    // padding: 38px 24px 0 0;
+    .cc {
+      background-color: blue;
+    }
+    .layoutSider {
+      width: 208px;
+      margin-right: 24px;
+      padding-top: 12px;
+      border-right: 1px solid #eee;
+      /deep/li {
+        padding-left: 16px !important;
+      }
+      .menuItem {
+        background: #fff;
+        a {
+          font-weight: 400;
+          border-right: none;
+          color: rgba(0, 0, 0, 0.65);
+          &:hover {
+            color: #dc0816;
+            font-weight: bold;
+          }
+        }
+        &::after {
+          border-right: 3px solid #fff;
+        }
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .siderIcon {
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          max-height: 20px;
+        }
+      }
+      .default {
+        position: relative;
+        top: -12px;
+        left: -30px;
+        border-right: 30px solid transparent;
+        -webkit-filter: drop-shadow(30px 0 0 #ccc);
+        filter: drop-shadow(30px 0 0 #000);
+      }
+      .colorIcon {
+        @extend .default;
+        -webkit-filter: drop-shadow(30px 0 0 #ccc);
+        filter: drop-shadow(30px 0 0 #dc0816);
+      }
+    }
+    .layoutContent {
+      min-width: 1184px;
+      background-color: #fff;
+      margin: 38px 24px 24px 0;
+    }
+  }
+  .pl {
+    padding-left: 24px;
+    box-sizing: border-box;
+  }
+}

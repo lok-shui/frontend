@@ -1,0 +1,197 @@
+.contactUs {
+  text-align: center;
+  width: 100%;
+  min-height: calc(100vh - 394px);
+  .headerBg {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px dashed transparent;
+    .imgControl {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: url("../../../assets/images/v2/aboutus_header.png") no-repeat;
+      background-size: cover;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin-top: -2px;
+      }
+    }
+    .centerWord {
+      width: 512px;
+      margin: 137px auto auto auto;
+      position: relative;
+      color: white;
+      z-index: 1;
+      img {
+        max-width: 510px;
+        max-height: 38px;
+      }
+      .ptxt {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.65);
+        margin-top: 25px;
+      }
+    }
+  }
+  .mainBg {
+    position: relative;
+    .redCard {
+      height: 214px;
+      margin: -80px auto 99px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 283px;
+        height: 214px;
+        margin-right: 24px;
+        img {
+          max-width: 283px;
+          max-height: 213px;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .about {
+      background: url("../../../assets/images/v2/about_aboutDMAI_bg@2x.png")
+        no-repeat;
+      background-size: cover;
+      height: 600px;
+      .largeSize {
+        font-size: 40px;
+        line-height: 56px;
+        margin: 29px auto 48px auto;
+      }
+      .grayText {
+        width: 792px;
+        height: 292px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        text-align: left;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 26px;
+        font-size: 16px;
+      }
+    }
+  }
+  .contactPhone {
+    width: 1200px;
+    height: 240px;
+    margin: 100px auto;
+    padding: 55px 110px 56px 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(249, 250, 255, 1);
+    .phoneItem {
+      text-align: left;
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        .su {
+          width: 4px;
+          height: 20px;
+          display: inline-block;
+          margin-right: 16px;
+          background: rgba(220, 8, 22, 1);
+        }
+      }
+      .method {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        padding-right: 64px;
+        margin-top: 34px;
+        .imgBox {
+          width: 48px;
+          height: 48px;
+          margin: 0 20px 0 0;
+          img {
+            max-width: 48px;
+          }
+        }
+        .mobile {
+          text-align: left;
+          font-size: 16px;
+          height: 48px;
+          font-weight: bold;
+          .p1 {
+            color: rgba(0, 0, 0, 0.65);
+          }
+          .p2 {
+            color: rgba(220, 8, 22, 1);
+          }
+        }
+      }
+      &:last-child {
+        .method {
+          padding-right: 0;
+          .mobile {
+            margin-right: 20px;
+          }
+          .wechat {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 60px;
+            img {
+              max-width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .phone {
+    position: relative;
+    margin: auto;
+    width: 1036px;
+    height: calc(100vh - 704px);
+    min-height: 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .telItem {
+      width: 45%;
+      height: 190px;
+
+      background: rgba(234, 161, 166, 0.03);
+      border: 1px solid rgba(220, 8, 22, 1);
+      .line1 {
+        margin: 33px auto 8px auto;
+        line-height: 32px;
+        color: rgba(0, 0, 0, 0.65);
+        img {
+          max-width: 32px;
+          max-height: 32px;
+        }
+        b {
+          margin-left: 12px;
+          font-size: 24px;
+        }
+      }
+      .line2 {
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.45);
+      }
+      .line3 {
+        color: rgba(220, 8, 22, 1);
+        margin-top: 34px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}

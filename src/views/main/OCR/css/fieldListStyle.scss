@@ -1,0 +1,212 @@
+.bgColor {
+    background: #f0f2f5;
+    padding: 24px 26px 56px 26px;
+    width: 100%;
+    min-height: calc(100vh - 324px);
+    position: relative;
+}
+
+.fieldtype,
+.fiterEdit {
+    position: absolute;
+    top: 24px;
+    left: 26px;
+    bottom: 56px;
+    right: 26px;
+    background-color: #fff;
+    padding: 25px 28px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .title {
+            width: 108px;
+            height: 24px;
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 1);
+            line-height: 24px;
+            text-align: left;
+        }
+    }
+
+    .empty {
+        margin-top: 6%;
+    }
+}
+
+.Content {
+    .template {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        margin-bottom: 24px;
+
+        .texts {
+            width: 820px;
+            height: 44px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.45);
+            line-height: 22px;
+            text-align: left;
+        }
+
+        .addtemplate {
+            display: flex;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid rgba(220, 8, 22, 0.6);
+            // opacity: 0.15;
+            border-radius: 4px;
+            color: rgba(220, 8, 22, 1);
+
+            .presettemplate {
+                cursor: pointer;
+                width: 160px;
+                border-right: 1px solid rgba(220, 8, 22, 0.8);
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    .prompt {
+        background: rgba(255, 245, 235, 1);
+        border-radius: 4px;
+        border: 1px solid rgba(254, 227, 198, 1);
+        text-align: left;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.45);
+        padding: 0 8px;
+    }
+}
+
+/deep/.ant-form-item {
+    display: flex;
+}
+
+/deep/.ant-form-item-label {
+    width: 100px;
+    text-align: left;
+}
+
+// 表格公共样式
+/deep/.ant-table-tbody>tr>td {
+    background: #fff !important;
+}
+
+/deep/.ant-table-tbody>tr:hover>td {
+    background: rgba(247, 249, 251, 1) !important;
+    box-shadow: 0px -1px 0px 0px rgba(232, 232, 232, 1);
+}
+
+/deep/.ant-table-column-title {
+    width: 84px;
+    height: 22px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 1);
+    line-height: 22px;
+}
+
+/deep/.ant-table {
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 22px;
+}
+
+/deep/.ant-tabs-tab-active {
+    font-weight: 700;
+}
+
+// 训练状态样式管理
+.status {
+    padding: 3px 9px;
+    box-sizing: border-box;
+    line-height: 22px;
+    border-radius: 11px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+}
+
+.statusRed {
+    @extend .status;
+    background: rgba(220, 8, 22, 0.1);
+    color: rgba(220, 8, 22, 1);
+}
+
+.statusYellow {
+    @extend .status;
+    background: rgba(255, 142, 34, 0.1);
+    color: rgba(255, 124, 0, 1);
+}
+
+.statusGreen {
+    @extend .status;
+    background: rgba(29, 191, 110, 0.1);
+    color: rgba(25, 191, 110, 1);
+}
+
+.statusBlack {
+    @extend .status;
+    background: rgba(152, 142, 142, 0.1);
+    color: rgba(105, 117, 125, 1);
+}
+
+.statusBlue {
+    @extend .status;
+    background: rgba(193, 223, 255, 0.5);
+    color: rgba(24, 144, 255, 1);
+}
+
+.statusIcon {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.nodata {
+    /deep/.ant-table-placeholder {
+        display: none;
+    }
+}
+
+.btn {
+    cursor: pointer;
+
+    &:hover {
+        color: #dc0816;
+    }
+}
+
+.none {
+    color: rgba(105, 117, 125, 0.45);
+}
+
+.red {
+    color: red;
+}
+
+/deep/.ant-modal-body {
+    padding-bottom: 12px;
+}
+
+/deep/.ant-form-item-label {
+    width: 110px;
+}
+
+.button {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.mr {
+    margin-left: 350px;
+    margin-right: 20px;
+}

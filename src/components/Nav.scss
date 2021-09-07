@@ -1,0 +1,525 @@
+/deep/ .ant-menu-item {
+  font-weight: bold;
+  line-height: 72px;
+}
+
+/deep/.ant-dropdown {
+  position: fixed;
+  border: 1px solid red;
+  height: 1000px;
+  display: block !important;
+}
+
+// ant-dropdown ant-dropdown-placement-bottomLeft
+.nav-contain1 {
+  width: 100%;
+  height: 74px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 13;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 2px 5px 0px rgba(189, 201, 226, 0.25), 0px -1px 0px 0px rgba(225, 230, 240, 1);
+
+  .mainContent {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      min-width: 254px;
+      height: 74px;
+      text-align: left;
+      margin-right: 131px;
+      line-height: 74px;
+      cursor: pointer;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    .menu {
+      flex: 1;
+
+      // 水平菜单的容器：去掉一级菜单默认的下划线
+      .ant-menu-horizontal {
+        line-height: 54px;
+        border-bottom: none;
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .defaultColor {
+        font-size: 16px;
+        font-weight: bold;
+        height: 74px;
+        line-height: 74px;
+        color: #4c4949;
+        line-height: 72px;
+        cursor: pointer;
+      }
+
+      .redFocus {
+        @extend .defaultColor;
+        color: #dc0816;
+        border-bottom: 2px solid #dc0816;
+      }
+
+      .ant-dropdown-trigger {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .ant-menu-item-selected {
+        color: rgba(76, 73, 73, 1);
+        border-bottom: none;
+      }
+    }
+
+    // '开发者文档'的样式
+    .ant-dropdown-link {
+      margin-right: 40px;
+      font-size: 16px;
+      font-weight: bold;
+      height: 74px;
+      line-height: 74px;
+      color: rgba(76, 73, 73, 1);
+      line-height: 72px;
+      cursor: pointer;
+
+      &:hover {
+        line-height: 72px;
+        color: #dc0816;
+        border-bottom: 2px solid #dc0816;
+      }
+      .words {
+        margin-left: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .ocr-dropdown-link {
+      @extend .ant-dropdown-link;
+      color:rgba(0,0,0,0.65);
+      font-weight:400;
+    }
+    .antActive {
+      @extend .ocr-dropdown-link;
+      color: #dc0816;
+      border-bottom: 2px solid #dc0816;
+    }
+   
+    
+    // 个人账单
+    .userInfo {
+      // width: 260px;
+      text-align: right;
+      margin-left: 324px;
+      display: flex;
+      .showInfo {
+        display: flex;
+        align-items: center;
+        .bellItem {
+          margin-right: 38px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          span {
+            font-family:PingFangSC-Regular,PingFang SC;
+          }
+          .img1, .img2 {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            margin-right: 4px;
+            background-size: cover;
+          }
+          .img1 {
+            background: url("../assets/images/v3/toHomeDefault.png") no-repeat;
+          }
+          .img2 {
+            background: url("../assets/images/v3/bell.png") no-repeat;
+          }
+     
+          &:hover {
+            .img1 {
+              background: url("../assets/images/v3/toHomeHover.png") no-repeat;
+            }
+            .span1 {
+              color: #DC0816;
+            }
+          }
+          &:visited {
+            .img1 {
+              background: url("../assets/images/v3/toHomeActived.png") no-repeat;
+            }
+            .span1 {
+              color: #B51A13;
+            }
+          }
+        }
+        .notice {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          border-radius: 50%;
+          text-align: center;
+          display: inline-block;
+          position: relative;
+          top: -12px;
+          color: #fff;
+          background:rgba(245,35,45,1);
+          border:1px solid rgba(255,255,255,1);
+        }
+      }
+  
+      button {
+        width: 60px;
+      }
+
+      .username {
+        // width: 60px;
+        display: flex;
+        line-height: 24px;
+        height: 24px;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        img {
+          max-height: 100%;
+        }
+
+        .littleIcons {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          text-align: center;
+          font-size: 14px;
+          color: red;
+          border-radius: 24px;
+          display: inline-block;
+          background: #fdeff0;
+        }
+        .accountName {
+          margin-left: 8px;
+        }
+
+      }
+    }
+  }
+   
+  .userContent {
+    @extend .mainContent;
+    width: 100%;
+    padding-right: 24px;
+    padding-left: 16px;
+    .logoOcr {
+      display: flex;
+      .ocrStyle {
+        @extend .mainContent;
+        display: flex;
+        justify-content: flex-start;
+        width: 440px;
+        .ocrItem {
+          line-height: 74px;
+          color:rgba(0,0,0,1);
+        }
+      }
+    }
+  }
+ 
+}
+
+
+.loginBtn {
+  background: #dc0817;
+  color: white;
+  border: none;
+}
+
+.ant-dropdown-menu {
+  box-shadow: none;
+  padding: 0;
+}
+
+// 开发者文字的二级菜单
+.apiSecond {
+  height: 176px;
+  text-align: center;
+  background: transparent;
+
+  .apiControl {
+    width: 1200px;
+    text-align: right;
+
+    .bg {
+      height: 100%;
+      padding-bottom: 16px;
+      padding-top: 16px;
+
+      width: 120px;
+      background: white;
+      box-shadow: 0px 10px 20px 0px rgba(65, 66, 94, 0.2);
+    }
+  }
+
+  .apiItem {
+    width: 120px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+
+    padding: 0 12px;
+
+    &:hover {
+      color: red;
+      background: #fdeff0;
+    }
+  }
+}
+
+.apiSecond>.ant-dropdown-menu-item {
+  text-align: right;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 697px;
+}
+
+.apiSecond>.ant-dropdown-menu-item-active,
+.apiSecond>.ant-dropdown-menu-item:hover {
+  background: none;
+  color: #4C4949;
+  // background: #fdeff0;
+}
+
+// AI能力的下拉菜单（下拉菜单都是相对于窗口定位，单独放）
+.skill {
+  width: 100%;
+  // display: block;
+  height: 380px;
+  padding: 0;
+  overflow-y: auto;
+  box-shadow: 0px 2px 5px 0px rgba(189, 201, 226, 0.25);
+
+  .menuBox {
+    // width: 1200px;
+    margin: 0 auto;
+    // height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 102px;
+    box-sizing: border-box;
+
+    .item {
+      width: 486px;
+      overflow: auto;
+      box-sizing: border-box;
+      white-space: pre-wrap;
+
+      .classify {
+        height: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.85);
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px -1px 0px 0px rgba(227, 231, 238, 1);
+        border-bottom: 1px solid #e5e9ef;
+      }
+
+      .level2 {
+        margin-bottom: 15px;
+
+        .gname {
+          margin: 32px auto 5px 0;
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.45);
+          line-height: 17px;
+        }
+
+        .spans {
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 20px;
+          margin-bottom: 17px;
+          margin-right: 32px;
+          max-width: 100px;
+
+          .name {
+            line-height: 20px;
+
+            &:hover {
+              line-height: 20px;
+              font-weight: 600;
+              color: rgba(220, 8, 22, 1);
+            }
+          }
+
+          .labels {
+            width: 40px;
+            text-align: center;
+            display: inline-block;
+            height: 22px;
+            background: rgba(220, 8, 22, 0.05);
+            border-radius: 4px;
+            margin-left: 4px;
+            font-size: 12px;
+            color: rgba(220, 8, 22, 1);
+          }
+        }
+      }
+    }
+  }
+
+  /deep/.ant-dropdown-menu-item:hover {
+    background: none;
+  }
+}
+
+// 行业应用下拉菜单
+.applicate {
+  height: 308px;
+  .ant-dropdown-menu {
+    box-shadow: none;
+  }
+
+  .applicateMenu {
+    z-index: 13;
+    margin: 0 auto;
+    padding: 60px 102px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 5px 0px rgba(189, 201, 226, 0.25);
+    overflow-y: auto;
+
+    &:hover {
+      background: none;
+    }
+
+    .secondLevel {
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .item1 {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.45);
+        line-height: 17px;
+        margin-bottom: 5px;
+      }
+
+      .item2 {
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 20px;
+        display: flex;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+
+        .thirdItem {
+          margin-right: 32px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            line-height: 20px;
+            font-weight: 600;
+            color: rgba(220, 8, 22, 1);
+          }
+        }
+      }
+    }
+
+    &:hover {
+      background: white;
+    }
+  }
+}
+
+// 个人中心的下拉菜单
+.unlogin {
+  width: 230px;
+  // height: 100px;
+}
+
+// 有主导航时
+.userDropdown {
+
+  /deep/.ant-dropdown-menu-item,
+  .ant-dropdown-menu-submenu-title {
+    padding: 0;
+  }
+
+  .userControl {
+    position: absolute;
+    right: 0;
+    width: 230px;
+    // height: 200px;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 5px 0px rgba(189, 201, 226, 0.25), 0px -1px 0px 0px rgba(225, 230, 240, 1);
+  }
+
+  .userLogo {
+    position: relative;
+    margin: 24px auto;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #f0f2f6;
+    padding-bottom: 16px;
+    .icon {
+      margin-right: 12px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      font-size: 24px;
+      color: red;
+      border-radius: 24px;
+      display: inline-block;
+      background: #fdeff0;
+    }
+
+    .names {
+      font-weight: bold;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  .self {
+    position: relative;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 20px;
+    margin-bottom: 20px;
+
+    &:hover {
+      color: red;
+      background: #fdeff0;
+    }
+  }
+}
+// 没有主导航时
+.userDropdownHover {
+  @extend .userDropdown;
+  width: 100%;
+  right: 24px;
+}

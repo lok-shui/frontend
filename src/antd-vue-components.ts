@@ -1,0 +1,83 @@
+import Vue from "vue";
+import {
+  LocaleProvider,
+  Input,
+  Button,
+  Form,
+  Layout,
+  Dropdown,
+  Menu,
+  Table,
+  Tag,
+  Tabs,
+  Icon,
+  Select,
+  Cascader,
+  Checkbox,
+  Collapse,
+  Carousel,
+  message,
+  Radio,
+  Modal,
+  InputNumber,
+  Spin,
+  Steps,
+  TreeSelect,
+  DatePicker,
+  Row,
+  Col,
+  Upload,
+  FormModel,
+  Popconfirm,
+  Breadcrumb,
+  Switch,
+  Pagination,
+  Tooltip,
+  ConfigProvider,
+  Empty,
+  Divider,
+  Slider,
+  Drawer
+} from "ant-design-vue";
+
+Vue.prototype.$message = message;
+Vue.prototype.$confirm = Modal.confirm;
+
+Vue.use(LocaleProvider);
+Vue.use(Input);
+Vue.use(Button);
+Vue.use(Form);
+Vue.use(Layout);
+Vue.use(Dropdown);
+Vue.use(Menu);
+Vue.use(Table);
+Vue.use(Tag);
+Vue.use(Icon);
+Vue.use(Select);
+Vue.use(Cascader);
+Vue.use(Checkbox);
+Vue.use(Carousel);
+Vue.use(Radio);
+Vue.use(InputNumber);
+Vue.use(Spin);
+Vue.use(Steps);
+Vue.use(TreeSelect);
+Vue.use(DatePicker);
+Vue.use(Row);
+Vue.use(Col);
+Vue.use(Modal);
+Vue.use(Tabs);
+Vue.use(Upload);
+Vue.use(Collapse);
+Vue.use(FormModel);
+Vue.use(Popconfirm);
+Vue.use(Breadcrumb);
+Vue.use(Switch);
+Vue.use(Checkbox);
+Vue.use(Pagination);
+Vue.use(Tooltip);
+Vue.use(ConfigProvider);
+Vue.use(Empty);
+Vue.use(Divider);
+Vue.use(Slider);
+Vue.use(Drawer);

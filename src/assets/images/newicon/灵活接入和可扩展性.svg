@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 16</title>
+    <defs>
+        <linearGradient x1="77.632397%" y1="-11.6130685%" x2="77.632397%" y2="109.237248%" id="linearGradient-1">
+            <stop stop-color="#DC0816" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFBCC0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="展示页面" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="能力详情-对话流" transform="translate(-996.000000, -535.000000)">
+            <g id="编组-11备份-3" transform="translate(936.000000, 473.000000)">
+                <g id="details_体验1" transform="translate(40.000000, 41.000000)">
+                    <g id="编组-16" transform="translate(19.000000, 21.000000)">
+                        <polygon id="多边形备份-2" fill="url(#linearGradient-1)" fill-rule="nonzero" points="18.0322004 1 33.648544 10.0161002 33.648544 28.0483005 18.0322004 37.0644007 2.41585676 28.0483005 2.41585676 10.0161002"></polygon>
+                        <g id="编组-15" transform="translate(12.021467, 4.005367)" stroke-width="2">
+                            <polygon id="多边形" stroke="#DC0816" fill-opacity="0.851972247" fill="#FFFFFF" stroke-linejoin="round" points="13.5241503 0 26.9715573 7.51341682 26.9715573 22.5402504 13.5241503 30.0536673 0.0767432829 22.5402504 0.0767432829 7.51341682"></polygon>
+                            <g id="编组-36备份" opacity="0.200000003" transform="translate(13.953488, 11.878354) scale(1, -1) translate(-13.953488, -11.878354) translate(0.000000, 0.715564)" stroke="#DC0816">
+                                <line x1="13.5241503" y1="22.039356" x2="13.5241503" y2="7.80092404" id="路径-20"></line>
+                                <polyline id="路径-9" stroke-linejoin="round" points="0 -6.00592921e-15 13.5241503 8.01431127 27.0483005 0"></polyline>
+                            </g>
+                            <g id="编组-36" transform="translate(0.000000, 7.012522)" stroke="#A2000B" stroke-linecap="round">
+                                <line x1="13.5241503" y1="23.0411449" x2="13.5241503" y2="8.80271295" id="路径-20"></line>
+                                <polyline id="路径-9" stroke-linejoin="round" points="0 0.500894454 13.5241503 9.01610018 27.0483005 0.500894454"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

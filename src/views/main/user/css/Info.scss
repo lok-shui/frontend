@@ -1,0 +1,128 @@
+$color: rgba(0, 0, 0, 0.4);
+$bottom: 1px solid #e9e9e9;
+.btnBg{
+  background: rgba(220, 8, 22, 1);
+}
+.form-contain {
+  &.defaultStyle {
+    .detailStyle {
+      margin-left: 20px;
+      width: 774px;
+      padding-bottom: 26px;
+      border-bottom: $bottom;
+      div > span {
+        &:first-child {
+          display: inline-block;
+          min-width: 60px;
+          text-align: right;
+          margin-right: 31px;
+          margin-bottom: 14px;
+          color: $color;
+        }
+      }
+    }
+    .passwordStyle {
+      width: 774px;
+      margin: 40px 0;
+      padding-bottom: 40px;
+      border-bottom: $bottom;
+      .currentpsd {
+        margin-left: 20px;
+        span {
+          color: $color;
+        }
+        b {
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+    }
+    .editBtn {
+      color: #fff;
+      border: 0;
+      @extend .btnBg;
+    }
+  }
+  &.editStyle {
+    .lineItem {
+      display: flex;
+      /deep/.ant-form-item-label {
+        min-width: 90px;
+        margin-right: 22px;
+        text-align: right;
+        label {
+          color: $color;
+        }
+      }
+      /deep/ .ant-form-item-control-wrapper {
+        input {
+          width: 661px;
+        }
+      }
+    }
+    .editPagePsd {
+      padding-bottom: 40px;
+      margin: 16px 0 40px 0;
+      border-bottom: $bottom;
+      /deep/ .ant-form-item-label {
+        margin-bottom: 10px;
+        /deep/ label {
+          font-size: 18px;
+          margin-bottom: 25px;
+        }
+      }
+      /deep/ .ant-form-item-control {
+        padding-left: 20px;
+      }
+    }
+  }
+  .cancelBtn {
+    width: 60px;
+    margin-left: 12px;
+  }
+}
+.VerifyCode {
+  float: right;
+  margin-top: 4px;
+}
+
+.infoWrap {
+  padding-left: 120px;
+  padding-top: 8px;
+  .info-form {
+    .input {
+      width: 310px;
+    }
+    .password-contain {
+      width: 310px;
+      height: 32px;
+      justify-content: space-between;
+
+      .text {
+        color: rgba(0, 0, 0, 0.25);
+        font-size: 14px;
+      }
+
+      button {
+        padding: 0;
+        width: 88px;
+        height: 32px;
+        margin-left: 24px;
+      }
+    }
+  }
+  .level {
+    b {
+      color: $color;
+    }
+  }
+}
+.changePSW {
+  /deep/.ant-modal-content {
+    width: 620px;;
+  }
+}
+.changeEmail {
+  /deep/.ant-modal-content {
+    width: 580px;;
+  }
+}

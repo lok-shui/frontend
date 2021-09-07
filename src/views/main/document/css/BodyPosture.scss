@@ -1,0 +1,159 @@
+.ant-tabs-nav {
+  width: 100%;
+}
+// 隐藏tab头
+/deep/.ant-tabs-nav-container {
+  display: none;
+}
+/deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {
+  width: 468px;
+  background: #fff;
+
+  &:last-child {
+    border-right: 0;
+  }
+  &:first-child {
+    border-left: 0;
+  }
+}
+/deep/ .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab {
+  width: 468px;
+  margin-right: 0;
+  background: #f5f6f9;
+  &:last-child {
+    border-left: 0;
+    border-right: 0;
+  }
+  &:first-child {
+    border-left: 0;
+  }
+}
+/deep/.ant-tabs-bar {
+  margin: 0;
+  margin-top: -1px;
+}
+/deep/.ant-input-group .ant-input-affix-wrapper {
+  max-width: 720px;
+  margin-right: 16px;
+}
+/deep/.ant-input-group > .ant-input-affix-wrapper:not(:last-child) .ant-input {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/deep/.ant-input {
+  border-right: 1px solid #d9d9d9;
+}
+// 746+16+64
+/deep/ .ant-input-group-wrapper {
+  width: 826px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content {
+  height: 120px;
+  margin-top: -16px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-content > .ant-tabs-tabpane {
+  background: #fff;
+  padding: 24px;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar {
+  border-color: #fff;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  border-color: transparent;
+  background: transparent;
+}
+
+.card-container > .ant-tabs-card > .ant-tabs-bar .ant-tabs-tab-active {
+  border-color: #fff;
+  background: #fff;
+}
+.grayBorder {
+  width: 1200px;
+  overflow: hidden;
+  border: 1px solid rgba(227, 231, 238, 1);
+}
+.card-container {
+  background: #f5f5f5;
+  overflow: hidden;
+  width: 1200px;
+  // height: 542px;
+  height: 576px;
+  background: rgba(255, 255, 255, 1);
+  // border: 1px solid rgba(227, 231, 238, 1);
+  .imgContain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 576px;
+    .leftImgBox {
+      width: 150px;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .imgList {
+        width: 150px;
+        height: 150px;
+        background: #e5e9ef;
+        line-height: 150px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+        }
+      }
+      .activeImg {
+        @extend .imgList;
+        box-sizing: border-box;
+        line-height: 85px;
+        border: 2px solid red;
+      }
+    }
+  }
+}
+// '检测'的样式
+/deep/.ant-input-group-addon {
+  width: 64px;
+  border-radius: 4px;
+  padding: 0;
+  overflow: hidden;
+}
+/deep/.ant-btn-primary {
+  width: 64px;
+  height: 32px;
+  color: rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 0px 4px 4px 0px;
+  border: 1px solid rgba(227, 231, 238, 1);
+}
+.videoWrap,
+.sceneWrap {
+  width: 1200px;
+  height: auto;
+}
+.bodyStyle {
+  border: 1px solid red;
+}
+.videoWrap {
+  height: 340px;
+  margin-bottom: 100px;
+  // border: 1px solid #f5f4f4;
+  text-align: center;
+  video {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    outline: none;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}

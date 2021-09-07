@@ -1,0 +1,280 @@
+/deep/.ant-spin-nested-loading
+  > div
+  > .ant-spin.ant-spin-show-text
+  .ant-spin-dot {
+  margin-top: 4px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30px;
+  display: block;
+  float: left;
+}
+// loading的'加载中'
+/deep/.ant-spin-nested-loading > div > .ant-spin .ant-spin-dot,
+/deep/.ant-spin-nested-loading > div > .ant-spin .ant-spin-text {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 80px;
+}
+
+.style {
+  display: flex;
+  justify-content: space-between;
+}
+.alignItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.synthetic {
+  width: 1200px;
+  box-sizing: border-box;
+  height: 458px;
+  border: 1px solid rgba(227, 231, 238, 1);
+  .tab {
+    @extend .style;
+    cursor: pointer;
+    height: 48px;
+    align-items: center;
+    .item {
+      flex: 1;
+      text-align: center;
+      line-height: 48px;
+      border-right: 1px solid #e3e7ee;
+      border-bottom: 1px solid #e3e7ee;
+      box-sizing: content-box;
+      background: rgba(245, 246, 249, 1);
+      &:last-child {
+        border-right: none;
+      }
+    }
+    .border {
+      @extend .item;
+      border-bottom: none;
+      background: none;
+    }
+  }
+  .speechWrap {
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 20px 24px;
+    @extend .style;
+    .samples {
+      width: 258px;
+      height: 370px;
+      box-sizing: border-box;
+      overflow: auto;
+      @extend .style;
+      flex-direction: column;
+      .sample {
+        padding: 14px 16px;
+        box-sizing: border-box;
+        border: 1px solid #e3e7ee;
+        margin-bottom: 8px;
+        cursor: pointer;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .ellipsis {
+          height: 66px;
+          -webkit-line-clamp: 3;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          cursor: pointer;
+        }
+      }
+      .redBorder {
+        @extend .sample;
+        border: 1px solid #dc0816;
+        .redColor {
+          color: #dc0816;
+          display: block;
+        }
+      }
+    }
+    .txt {
+      width: 874px;
+      height: 370px;
+      .textWrap {
+        width: 100%;
+        height: 200px;
+        padding: 20px 24px 19px 24px;
+        background: #f4f6f9;
+        border: 1px solid #e3e7ee;
+        .borderWrap {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #e3e7ee;
+          background: white;
+          padding: 14px;
+          textarea {
+            width: 100%;
+            height: 106px;
+            resize: none;
+            border: none;
+            &:focus {
+              outline: none;
+            }
+          }
+          .txtLength {
+            width: 100%;
+            height: 32px;
+            @extend .style;
+            align-items: center;
+            span {
+              color: rgba(0, 0, 0, 0.2);
+            }
+            .speechBtn {
+              width: 96px;
+              color: white;
+              line-height: 32px;
+              cursor: pointer;
+              background: rgba(220, 8, 22, 1);
+              border-radius: 4px;
+              text-align: center;
+              margin-bottom: 15px;
+              span {
+                color: white;
+              }
+            }
+            .unclick {
+              @extend .speechBtn;
+              // pointer-events: none; // 鼠标原有的事件不能实现
+              // cursor: not-allowed; // 鼠标不可点击时的显示状态
+              // opacity: 0.5;
+              background: #eceef1;
+              span {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+      .trySpeech {
+        width: 100%;
+        height: 150px;
+        margin-top: 18px;
+        background: #f4f6f9;
+        .listen {
+          line-height: 48px;
+          font-size: 16px;
+          font-weight: bold;
+          box-sizing: border-box;
+          padding-left: 24px;
+          border-bottom: 1px solid #e1e6f0;
+        }
+        .tryListen {
+          padding: 0 24px;
+          margin-top: 23px;
+          @extend .alignItem;
+          .voiceItem {
+            width: 400px;
+            height: 56px;
+            background: #fff;
+            @extend .alignItem;
+            border-radius: 4px;
+            padding: 0 18px 0 12px;
+            border: 1px solid rgba(227, 231, 238, 1);
+            .leftImg {
+              img {
+                max-width: 32px;
+                max-height: 32px;
+                margin-right: 16px;
+              }
+            }
+            .rightBtn {
+              width: 96px;
+              height: 32px;
+            }
+          }
+        }
+        .voiceWrap {
+          @extend .style;
+          width: 96%;
+          margin: 3% auto;
+          .voice {
+            @extend .style;
+            width: 100%;
+            align-items: center;
+            line-height: 54px;
+            background: white;
+            padding: 0 12px;
+            border: 1px solid #e3e7ee;
+            img {
+              // width: 32px;
+              // height: 32px;
+              border-radius: 20px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .voiceWrap,
+        .tryListen {
+          .play {
+            width: 96px;
+            height: 32px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 4px;
+            display: flex;
+            // opacity: 0.25;
+            align-items: center;
+            color: red;
+            overflow: hidden;
+            // pointer-events: none;
+            border: 1px solid rgba(220, 8, 22, 1);
+            .audioWrap {
+              width: 36px;
+              height: 32px;
+              overflow: hidden;
+              display: none;
+              audio {
+                margin-top: -10px;
+                margin-left: -10px;
+              }
+            }
+            .handlePlay {
+              width: 70%;
+              margin: 0 auto;
+              cursor: pointer;
+              text-align: center;
+              i {
+                margin-right: 5px;
+              }
+              .imgs {
+                display: flex;
+                height: 30px;
+                align-items: center;
+                margin-top: 55px;
+                img {
+                  max-height: 18px;
+                  max-width: 18px;
+                }
+              }
+            }
+          }
+          .focusPlay {
+            @extend .play;
+            // pointer-events: fill;
+            // opacity: 1;
+          }
+          .childNoPlay {
+            opacity: 0.25;
+            pointer-events: none;
+            @extend .play;
+          }
+          .childCanPlay {
+            @extend .childNoPlay;
+            pointer-events: fill;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,651 @@
+
+// 网络图片input的宽度
+/deep/ .ant-input-group-wrapper {
+  width:584px;
+}
+// BodyPosture.vue
+.sceneWrap {
+  width: 940px;
+  overflow: hidden;
+   // 标题'使用体验'
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    .line {
+      width: 4px;
+      height: 20px;
+      display: block;
+      margin-right: 24px;
+      background: #dc0816;
+    }
+  }
+  // 左边缩略图
+  .left {
+    width: 90px;
+    height: 480px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    .imgList {
+      width: 90px;
+      height: 90px;
+      background: #e5e9ef;
+      line-height: 90px;
+      margin-bottom: 16px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height:90px;
+        object-fit: cover;
+      }
+    }
+    .activeImg {
+      @extend .imgList;
+      box-sizing: border-box;
+      line-height: 85px;
+      border: 2px solid red;
+    }
+  }
+  // 右边大图
+
+  .right {
+    width: 798px;
+  }
+  .right, .rightImgBox {
+    // height: 374px;
+    box-sizing: border-box;
+    .failWrap {
+      height: 400px;
+      text-align: center;
+      background: #F2F5F5;
+      img {
+        margin: 135px auto 32px auto;
+      }
+      .fail {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-bottom: 8px;
+        color:rgba(0,0,0,.6);
+      }
+      .again {
+        color:rgba(0,0,0,.4);
+        line-height: 20px;
+      }
+    }
+    .topImg {
+      display: flex;
+      height: 400px;
+      justify-content: center;
+      background: #F2F5F5;
+      .img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      .prewImg {
+        flex: 1;
+        line-height: 374px;
+        background: #f4f6f9;
+        border: 1px solid #e3e7ee;
+        text-align: center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .bottomInput {
+      margin-top: 16px;
+      height: 64px;
+      background: #f4f6f9;
+    }
+    .bottomInput, .bodyInput {
+      width: 100%;
+      padding: 14px;
+      
+      display: flex;
+      align-items: center;
+      padding: 18px 16px 18px 24px;
+      
+      background: #F2F5F5;
+      .inputWrap {
+        width: 639px;
+        line-height: 28px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        border: 1px solid lightgray;
+        input {
+          border: none;
+          width: 573px;
+        }
+        button {
+          width: 20%;
+          height: 30px;
+          text-align: center;
+
+          float: right;
+          border-left: 1px solid lightgray;
+        }
+        .check {
+          width: 64px;
+          color: white;
+          background: #dc0816;
+          border-radius: 0 3px 3px 0;
+        }
+      }
+      .orBody {
+        margin: 0 16px 0 18px;
+      }
+
+      // 修改input中type="file"时的默认样式
+      .fileinput-button {
+        line-height: 30px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 4px;
+        padding: 0 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        span {
+          width: 80px;
+          color: gray;
+          border-radius: 3px;
+          cursor: pointer;
+          padding: 2px 5px;
+        }
+        input {
+          display: inline-block;
+          width: 80px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          opacity: 0;
+          font-size:0;
+          cursor: pointer!important;
+          filter: "alpha(opacity=0)";
+        }
+      }
+      
+    }
+    .bodyInput {
+      margin-top: 20px;
+      height: 72px;
+      background:rgba(244,246,249,1);
+      // .or {
+      //   margin: 0 16px 0 20px;
+      // }
+      // 修改input中type="file"时的默认样式
+      .fileinput-button {
+        width: 92px;
+        line-height: 30px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        background:#DC0816;
+        border-radius: 4px;
+        padding: 0 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        span {
+          width: 92px;
+          color: white;
+          border-radius: 3px;
+          cursor: pointer;
+          padding: 2px 5px;
+        }
+        // input框type=file设置cursor:pointer的问题,font-size:0;才会起作用
+        input {
+          display: inline-block;
+          width: 92px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          opacity: 0;
+          font-size:0;
+          cursor: pointer!important;
+          filter: "alpha(opacity=0)";
+        }
+      }
+    }
+
+
+
+  }
+  .rightImgBox {
+    width: 976px;
+    margin-left: 24px;
+    height: 436px;
+    .failWrap,.topImg {
+      height: 436px;
+    }
+
+  }
+  // 右边大图---end
+  
+}
+// OCR
+.panelTab {
+  width: 100%;
+  display: flex;
+  div {
+    flex: 1;
+    line-height: 48px;
+    border: 1px solid #e3e7ee;
+    text-align: center;
+    margin-right: -1px;
+    background: #f5f6f9;
+    cursor: pointer;
+  }
+  .activeTab {
+    border-bottom: none;
+    background: none;
+  }
+}
+
+.imgIdentify {
+    width: 1200px;
+    border: 1px solid #e3e7ee;
+    .panelItem {
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      .leftWrap {
+        width: 764px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .top {
+          width: 100%;
+          height: 514px;
+          display: flex;
+          // background:rgba(244,246,249,1);
+          .left {
+            width: 90px;
+            height: 100%;
+            margin-right: 24px;
+            .small {
+              width: 90px;
+              height: 90px;
+              line-height: 90px;
+              margin-bottom: 16px;
+              border: 1px solid #ccc;
+              background: #f5f5f5;
+              overflow: hidden;
+              text-align: center;
+              cursor: pointer;
+              img {
+                width: 100%;
+                height: 92px;
+                object-fit: cover;
+              }
+            }
+            .smallActive {
+              @extend .small;
+              box-sizing: border-box;
+              line-height: 85px;
+              border: 2px solid red;
+            }
+          }
+          .center {
+            width: 654px;
+            height: 100%;
+            line-height: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            background:rgba(245,246,249,1);
+            .ocrFailed, .largeWrap {
+              width:100%;
+              height: 100%;
+              
+              // border: 1px solid #ccc;
+              background: #f5f5f5;
+              overflow: hidden;
+              text-align: center;
+            }
+            .largeWrap {
+              display: flex;
+              align-items: center;
+              img {
+                max-width: 100%;
+                max-height: 99%;
+              }
+            }
+            .ocrFailed {
+              img{
+                margin: 135px auto 32px auto;
+              }
+              .ocrFail {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 28px;
+                margin-bottom: 8px;
+                color:rgba(0,0,0,.6);
+              }
+              .ocrAagin {
+                color:rgba(0,0,0,.4);
+                line-height: 20px;
+              }
+            }
+          }
+    
+        }
+        .bottom {
+          width: 100%;
+          height: 64px;
+          margin-top: 16px;
+          background:rgba(244,246,249,1);
+          .bottomWrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            .orOcr {
+              margin: 0 8px 0 9px;
+            }
+            .inputWrap {
+              width: 580px;
+              line-height: 28px;
+              border-radius: 3px;
+              box-sizing: border-box;
+              input {
+                border: none;
+                width: 514px;
+              }
+            }
+            // .or {
+            //   margin: 0 9px;
+            // }
+    
+            // 修改input中type="file"时的默认样式
+            .fileinput-button {
+              
+              line-height: 30px;
+              position: relative;
+              display: inline-block;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 1);
+              border-radius: 4px;
+              padding: 0 10px;
+              border: 1px solid rgba(0, 0, 0, .15);
+              span {
+                width: 106px;
+                height: 32px;
+                display: inline-block;
+                color: gray;
+                border-radius: 3px;
+                cursor: pointer;
+                text-align: center;
+                padding: 2px 5px;
+              }
+              input {
+                display: inline-block;
+                width: 106px;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                opacity: 0;
+                font-size:0;
+                cursor: pointer!important;
+                filter: "alpha(opacity=0)";
+              }
+            }
+          }
+  
+        }
+      }
+      .right {
+        width: 360px;
+        height: 594px;
+        background: #f5f6f9;
+        .title {
+          width: 100%;
+          height: 53px;
+          font-size: 16px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 53px;
+          padding-left: 20px;
+          border-bottom: 1px solid #e3e7ee;
+        }
+        .response {
+          padding: 15px 0 15px 20px;
+          .arrowUp {
+            float: right;
+            font-size: 12px;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 600;
+            width: 100%;
+            color: rgba(0, 0, 0, 0.8);
+          }
+          .result {
+            width: 250px;
+            padding-right: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.5);
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  // 人脸朝向
+  .uploadWrap {
+    text-align: left;
+    width: 1200px;
+    min-height: 634px;
+    // border: 1px solid lightgray;
+    padding: 24px;
+    display: flex;
+    .leftPart {
+      width: 768px;
+      height: 514px;
+      margin-right: 24px;
+      .imgContent {
+        display: flex;   
+        width: 100%; 
+        height: 100%;  
+        .imgWrapper {
+          width: 90px;
+          height: 100%;
+          margin-right: 24px;
+          overflow: auto;
+          .defaultItem {
+            width: 100%;
+            height: 90px;
+            line-height: 90px;
+            background: #f5f6f9;
+            margin-bottom: 16px;
+            overflow: hidden;
+            img {
+              width: 90px;
+              height:90px;
+              object-fit: cover;
+            }
+          }
+          .activeStyle {
+            @extend .defaultItem;
+            box-sizing: border-box;
+            line-height: 85px;
+            border: 2px solid red;
+          }
+           
+        }
+        .largeImg {
+          width: 654px;
+          height: 100%;
+          .limitWrap, .change{
+            position: relative;
+            width: 654px;
+            height: 514px;
+            overflow: hidden;
+            background: #f5f6f9;
+            overflow-y: hidden;
+            z-index: 10;
+            text-align: center;
+          }
+          .limitWrap {
+            img {
+              margin: 135px auto 32px auto;
+            }
+            .failed {
+              font-size: 20px;
+              font-weight: bold;
+              line-height: 28px;
+              margin-bottom: 8px;
+              color:rgba(0,0,0,.6);
+            }
+            .try {
+              color:rgba(0,0,0,.4);
+              line-height: 20px;
+            }
+          }
+          .change {
+            line-height: 420px;
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+      }
+
+      .upload {
+        width: 768px;
+        margin-top: 16px;
+        padding: 16px 24px;
+        height: 64px;
+        background: #f5f6f9;
+        .inputWrap {
+          width: 514px;
+          line-height: 28px;
+          border-radius: 3px;
+          border: 1px solid lightgray;
+          input {
+            border: none;
+            width: 78%;
+          }
+          button {
+            width: 20%;
+            height: 30px;
+            text-align: center;
+  
+            float: right;
+            border-left: 1px solid lightgray;
+          }
+          .check {
+            width: 64px;
+            color: white;
+            background: #dc0816;
+            border-radius: 0 3px 3px 0;
+          }
+        }
+        // .or {
+        //   margin: 0 10px;
+        // }
+        .uploadBtn {
+          width: 80px;
+          color: white;
+          padding: 5px 0;
+          background: #dc0816;
+          border-radius: 3px;
+          border: none;
+          outline: medium none;
+          overflow: hidden;
+        }
+  
+        // 修改input中type="file"时的默认样式
+        .fileinput-button {
+          width: 106px;
+          text-align: center;
+          line-height: 30px;
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          background: rgba(255, 255, 255, 1);
+          border-radius: 4px;
+          padding: 0 10px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          span {
+            width: 80px;
+            color: gray;
+            border-radius: 3px;
+            cursor: pointer;
+            padding: 2px 5px;
+          }
+          input {
+            display: inline-block;
+            width: 80px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            font-size:0;
+            cursor: pointer!important;
+            filter: "alpha(opacity=0)";
+          }
+        }
+
+      }
+  
+      .flexStyle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexBetween {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .rightPart {
+      .code {
+        width: 360px;
+        height: 594px;
+        text-align: left;
+        padding: 0 20px;
+        background: #f5f6f9;      
+        .line {
+          border-bottom: 1px solid #e2e7f1;
+          margin: 0 -20px 10px -20px;
+          line-height: 54px;
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;       
+          span {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          button {
+            width: 88px;
+          }
+        }
+        .dataWrap {
+          text-align: left;
+          height: 85%;
+          word-break: break-all;
+          overflow: auto;
+          width: 320px;
+          // white-space: pre-wrap;
+          // word-wrap: break-word;
+          textarea {
+            width: 316px;
+            margin-left: -77px;
+          }
+        }
+      }
+
+    }
+  }

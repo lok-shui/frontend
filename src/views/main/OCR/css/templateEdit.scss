@@ -1,0 +1,773 @@
+
+img {
+  max-width: 100%;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.flexCen {
+  @extend .flex;
+  justify-content: center;
+}
+.flexStart {
+  @extend .flex;
+  justify-content: flex-start;
+}
+.flexBet {
+  @extend .flex;
+  justify-content: space-between;
+
+}
+.flexCom {
+  @extend .flex;
+  flex-direction: column;
+}
+.flexComBet {
+  @extend .flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flexComCen{
+  @extend .flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// 浏览器的窗口最小设为1200px
+.bgColor {
+  background: #f0f2f5;
+  padding: 0 0 56px 0;
+  width: 100%;
+  min-width: 1200px;
+  min-height: calc(100vh - 84px);
+  position: relative;
+  // border: 1px solid blue;
+}
+.topBar {
+  width: 100%;
+  height: 56px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  box-shadow: 0px 4px 8px 0px rgba(36, 46, 66, 0.03),
+    0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+  // border: 1px solid red;
+  padding: 0 24px 0 27px;
+  .topLeft, .topCenter, .topRight {
+    flex: 1;
+    // border: 1px solid green;
+    height: 100%;
+    font-family:PingFangSC-Regular,PingFang SC;
+    color:rgba(0,0,0,0.45);
+  }
+  .topLeft {
+    .oblique {
+      margin: 0 8px;
+    }
+  }
+  .topCenter {
+    // justify-content: center;
+    .centerItem {
+      margin-right: 40px;
+      .img {
+        width: 20px;
+        margin-bottom: 3px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .topRight {
+    justify-content: flex-end;
+    button {
+      height:32px;
+    }
+    .saveBtn {
+      color: #fff;
+      border: 0;
+      background:rgba(220,8,22,1);
+    }
+    .try {
+      margin: 0 40px 0 16px;
+    }
+    .moreBtn {
+      width:32px;
+      margin-left: 40px;
+      border-radius: 50%;
+      background:rgba(255,255,255,1);
+      border:1px solid rgba(0,0,0,0.15);
+    }
+  }
+}
+/deep/ .ant-tabs-bar {
+  border-bottom: none;
+}
+.rightPanel {
+  position: absolute;
+  top: 57px;
+  right: 0;
+  width:480px;
+  z-index: 12;
+  min-height: calc(100vh - 142px);
+  background:rgba(255,255,255,1);
+  // border:1px solid green;
+  box-shadow:0px 4px 8px 0px rgba(36,46,66,0.06);
+  .rightContent {
+    width: 100%;
+    /deep/.ant-tabs-nav .ant-tabs-tab {
+      height: 52px;
+      background: #F5F6FA;
+    }
+    /deep/.ant-tabs-nav .ant-tabs-tab-active {
+      background: #fff;
+    //   margin: 0;
+      
+    // padding: 12px 0;
+    }
+    .stepBg {
+      display: flex;
+      height: 24px;
+      align-items: center;
+    }
+    .marginLeft {
+      margin: 0 9px 0 18px;
+    }
+    .popTip {
+      position: absolute;
+      left:28px;
+      width:350px;
+      top: 55px;
+      height:128px;
+      background:rgba(0,0,0,.85);
+      box-shadow:0px 9px 28px 8px rgba(0,0,0,0.05),0px 6px 16px 0px rgba(0,0,0,0.08),0px 3px 6px -4px rgba(0,0,0,0.12);
+      border-radius: 4px;
+      color: #fff;
+      z-index: 2;
+      .arrow {
+        margin: -8px auto auto auto;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 8px solid rgba(0,0,0,.85);
+      }
+      .popWord {
+        margin:7px;
+        line-height:22px;
+        text-align: left;
+      }
+    }
+    .popStep2 {
+      @extend .popTip;
+      width: auto;
+      left: 90px;
+      .arrow{
+        margin-right: 25px;
+      }
+    }
+    .icons {
+      color: #C2C2C2;
+    }
+    .tipWord {
+      width: 440px;
+      height:32px;
+      line-height: 32px;
+      margin: 0 auto 20px auto;
+      text-align: center;
+      color:rgba(0,0,0,.5);
+      background:rgba(255,245,235,1);
+      border-radius:4px;
+      border:1px solid rgba(254,227,198,1);
+    }
+    .defaultContent {
+      // border:1px solid blue;
+      padding:  0 20px;
+      p {
+        text-align: left;
+        color:rgba(0,0,0,.8);
+      }
+      
+      .defImg {
+        margin-top: 35px;
+        width:440px;
+        height:330px;
+        background:rgba(243,244,247,1);
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .identifyArea {
+      width:440px;
+      margin: 0 auto 16px auto;
+      padding: 16px 20px;
+      background:#F5F6FA;
+      z-index: 1;
+      .firstStep {
+        input {
+          width: 400px;
+          height: 32px;
+          margin: 8px 0 16px 0;
+        }
+      }
+      .secondStep {
+        margin-top: 10px;
+        .span {
+          width: 70px;
+        }
+        input, .result, .sels, .optInput {
+          width:326px;
+          height:32px;
+        }
+         
+        .result {
+          text-align: left;
+          line-height: 32px;
+        }
+       
+      }      
+    }
+
+    /deep/.ant-tabs .ant-tabs-top-content > .ant-tabs-tabpane, .ant-tabs .ant-tabs-bottom-content > .ant-tabs-tabpane {
+      min-height: calc(100vh - 200px);
+    }
+
+    .optionStyle {
+      display: flex;
+      margin-left: 80px;
+      margin-top: -40px;
+      background: #fff;
+      font-feature-settings: 'tnum';
+      box-sizing: border-box;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 12;
+      box-shadow: 0 2px 8px rgba(0,0,0,.15);
+      .myItemBox, .opItemBox {
+        padding: 0 10px;
+        background: #fff;
+      }
+      .myItemBox {
+        border-left: 1px solid #E8E8E8;
+      }
+      .opItem, .myItem {
+        width:163px;
+        height:32px;
+        line-height: 32px;
+        text-align: left;
+        cursor: pointer;
+        &:hover {
+          background-color: #ffe8e6;
+        }
+      }
+    }
+    .dropDown{
+      @extend .optionStyle;
+      margin-top: -430px;
+    }
+  }
+  
+}
+.middle {
+  margin: 25px 0 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+.ruleTip {
+  height:22px;
+  color:rgba(245,45,30,1);
+  line-height:22px;
+  text-align: left;
+  margin-top: -14px;
+}
+.redTip {
+  @extend .ruleTip;
+  margin-top: 8px;
+}
+.nameTip {
+  @extend .ruleTip;
+  margin-top: 0;
+  margin-left: 80px;
+}
+.leftArea {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: calc(100vw - 480px);
+  min-width: 720px;
+  min-height: calc(100vh - 142px);
+  z-index: 11;
+  // border:1px solid greenyellow; 
+  .barBox {
+    position: relative;
+    width: 636px;
+    height:80px;
+    margin: 0 auto;
+    z-index: 2;
+    .inputNumber {
+      width: 200px;
+      height: 120px;
+      position: absolute;
+      margin: 0 auto;
+      top: 80px;
+      left:250px;
+      color: #fff;
+      border-radius: 3px;
+      background:#696464;
+      input {
+        width: 50px;
+        outline: none;
+        border: 0;
+        margin: 0 5px;
+      }
+      .confirm {
+        cursor: pointer;
+        padding: 4px 15px;
+        margin-top: 20px;
+        background: #1890ff;
+      }
+    }
+   
+    .controlBar {
+      position: absolute;
+      height:64px;
+      margin: 15px auto 0 auto;
+      padding: 0 20px;
+      background:rgba(255,255,255,1);
+      box-shadow:rgba(36,46,66,0.16) 0px 0px 5px;
+      // box-shadow:0px 2px 4px 0px rgba(36,46,66,0.06);
+      border-radius:4px;
+      z-index: 12;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .btnBg{
+        padding-right: 8px;
+        border-radius:2px;
+      }
+    
+      /deep/ .ant-btn {
+        padding: 0 8px 0 0;
+        overflow: hidden;
+      }
+      button {
+        height: 32px;
+        border-radius: 2px;
+        border: 0;
+      }
+      .moveBtn {
+        color: #fff;
+        background:rgba(250,100,0,1);
+      }
+      .noMove {
+        color: #FA6400;
+        background: rgba(254,239,229,1);;
+      }
+      .noRectChoose {
+        color: #2EBBA1;
+        background: #EAF8F5;
+        margin-left: 16px;
+      }
+      .rectChoose   {
+        color: #fff;
+        margin-left: 16px;
+        background: #2EBBA1;
+      }
+      .rectIdentify {
+        margin-left: 16px;
+        color: #fff;
+        background: #1890FF;
+      }
+      .noIdentify {
+        margin-left: 16px;
+        color: #1890FF;
+        background: #E7F3FF;
+      }
+      .addForm {
+        color: #9E65D8;
+        background: #F5EFFB;
+        margin: 0 16px;
+      }
+      .grayBox {
+        border-left: 1px solid #E4E8EE;
+        .little {
+          margin-left: 30px;
+          color:rgba(0,0,0,0.45);
+          img {
+            max-width: 16px;
+            max-height: 16px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .bgca {
+    min-width: calc(100vw - 480px);
+    min-height: calc(100vh - 480px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .canvas-box {
+    min-width: 720px;
+    width: calc(100vw - 480px);
+    min-height: calc(100vh - 142px);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    // border: 1px solid greenyellow;
+    #itemcanvans{
+      position: absolute;
+      left: 0;
+      top: 0;
+      // border: 1px solid red;
+    }
+  }
+ 
+}
+
+/deep/ .ant-modal-content {
+  width: 560px;
+  height: 655;
+}
+
+.progressBtn {
+  margin-top: 30px;
+  // border:1px solid rgba(0,0,0,0.15);
+} 
+
+.clipModal {
+  /deep/.ant-modal-content {
+    width: 560px;
+    height: 560px;
+  }
+  .clipContent {
+    position: relative;
+    width:512px;
+    height:391px;
+    background:rgba(240,242,245,1);
+    border-radius:4px;
+    border:1px solid rgba(0,0,0,0.15);
+
+
+    #markCanvas {
+      // border: 1px solid green;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}
+#clipCanvas {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  width:512px;
+  height:391px;
+  background:rgba(240,242,245,1);
+  border-radius:4px;
+  border:1px solid rgba(0,0,0,0.15);
+  // z-index: 1;
+}
+  
+// 下拉菜单
+.changeTemEdit {
+  position:absolute;
+  right: 24px;
+  top: 56px;
+  box-shadow:0px 9px 28px 8px rgba(0,0,0,0.05),0px 6px 16px 0px rgba(0,0,0,0.08),0px 3px 6px -4px rgba(0,0,0,0.12);
+  border-radius:4px;
+  .downMenuItem {
+    height: 100%;
+    color: rgba(0, 0, 0, .6);
+    background: #fff;
+    .item {
+      width: 100%;
+      &:hover{
+        color: #DC0816;
+        background: #fdeff0;
+      }
+    }
+  }
+}
+
+.gridStyle {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  width: 300px;
+  height:225px;
+  .itemgrid {
+    box-sizing: border-box;
+    background-color: white;
+    flex: 0 0 33.33%;
+    height: 75px;
+    img {
+      max-width: none;
+       
+    }
+  }
+}
+
+.rectItem {
+  width: 10px;
+  height: 10px;
+  background:#DC0816;
+  border: 2px solid #fff;
+  position:absolute;
+}
+
+.parent {
+  width: 200px;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.child {
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 25%;
+  height: 50px;
+  border: 1px solid red;
+}
+
+.trialModal {
+  /deep/.ant-modal-content {
+    width: 850px;
+    height: 530px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 6px 16px -8px rgba(0, 0, 0, 0.03),
+      0px 9px 28px 0px rgba(0, 0, 0, 0.05),
+      0px 12px 48px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+  /deep/ .ant-upload.ant-upload-select-picture-card {
+    width: 454px;
+    height: 420px;
+    background: rgba(245, 246, 249, 1);
+    border-radius: 8px;
+    border: 2px dashed #DFDFE1;
+  }
+  /deep/.ant-modal-footer {
+    display: none;
+  }
+  /deep/.ant-spin  {
+    position: relative;
+    top: -220px;
+    left: 130px;
+    width: 90px;
+    height: 85px;
+    background: #fff;
+  }
+  .leftUpload {
+    width: 454px;
+    height: 420px;
+    background: rgba(245, 246, 249, 1);
+    border-radius: 8px;
+  }
+  .rightResult {
+    width: 332px;
+    height: 420px;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 1);
+    .nullTxt {
+      width:286px;
+      height:350px;
+      align-items: center;
+      margin: 0 auto;
+      color:rgba(0,0,0,0.45);
+      .nullImg {
+        width:64px;
+        height:41px;
+        margin-bottom: 16px;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+    .jsonBox {
+      width:286px;
+      height:350px;
+      margin: 0 auto;
+      overflow: auto;
+      color: rgba(0, 0, 0, 0.85);
+      .title {
+        color:rgba(0,0,0,0.45);
+        margin-bottom: 16px;
+        .titleleft {
+          margin-right: 40px;
+        }
+      }
+      .line {
+        margin-bottom: 16px;
+      }
+      .name {
+        width: 84px;
+        margin-right: 12px;
+      }
+      .cont {
+        width: 196px;
+      }
+    }
+  }
+}
+.saveModal {
+  /deep/ .ant-modal-content {
+    width:360px;
+    height:180px;
+  }
+  /deep/.ant-modal-footer {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    border-top: none;
+  }
+  /deep/ .ant-btn-primary {
+    margin-right: 18px;
+  }
+  /deep/ .ant-modal-close-x {
+    display: none;
+  }
+  .words {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:rgba(0,0,0,0.85);
+  }
+}
+.greenIcon {
+  width: 36px;
+  height: 36px;
+}
+.releaseModal {
+  /deep/ .ant-modal-content {
+    width: 560px;
+    height: 410px;
+  }
+  /deep/.ant-modal-footer {
+    display: none;
+  }
+  .boldWord {
+    font-weight: bold;
+    font-size:20px;
+    margin: 22px auto 16px auto;
+    color: rgba(0, 0, 0, 1);
+  }
+  .warmPrompt {
+    text-align: left;
+    margin-top: 32px;
+    color: rgba(0, 0, 0, .45);
+    .line1 {
+      margin: 7px auto 17px auto;
+    }
+  }
+  .footerBtn {
+    margin-top: 40px;
+    .btn1 {
+      margin-right: 18px;
+      border: none;
+      color: #fff;
+      background:rgba(220,8,22,1);
+    }
+  }
+}
+.createImgBox {
+  position: relative;
+  width: 419px;
+  height: 320px;
+  justify-content: center;
+  background: rgba(245, 246, 249, 1);
+  border-radius: 8px;
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .toChoose {
+    position: absolute;
+    width: 100%;
+    height:48px;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background:rgba(0,0,0,0.45);
+    border-radius:0px 0px 4px 4px;
+  }
+}
+.trialImgBox {
+  @extend .createImgBox;
+  width:454px;
+  height:420px;
+  border: none;
+}
+/deep/  .ant-form-item {
+  display: flex;
+}
+.createModal {
+  /deep/.ant-form-item-label {
+    min-width: 80px;
+  }
+  /deep/.ant-form-item{
+    margin: 0;
+    padding: 0;
+    height: 320px;
+  }
+  /deep/.ant-modal-content {
+    width: 560px;
+    height: 486px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 6px 16px -8px rgba(0, 0, 0, 0.03),
+      0px 9px 28px 0px rgba(0, 0, 0, 0.05),
+      0px 12px 48px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+  }
+
+  /deep/ .ant-upload.ant-upload-select-picture-card {
+    width: 419px;
+    height: 320px;
+    background: rgba(245, 246, 249, 1);
+    border-radius: 8px;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+  }
+  input {
+    width: 419px;
+  }
+ 
+}
+.nameModal {
+  /deep/ .ant-input-affix-wrapper {
+    width: 350px;
+  }
+  /deep/ .ant-input {
+    width: 350px;
+  }
+  .clearIcon {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #BFBFBF;
+  }
+}
+/deep/.ant-modal-title {
+  font-weight: bold;
+  color:rgba(0,0,0,0.85);
+  line-height:24px;
+  font-size: 16px;
+}

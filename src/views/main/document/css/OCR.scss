@@ -1,0 +1,97 @@
+/deep/.ant-spin-nested-loading {
+  width: 100%;
+}
+// 手风琴的箭头放在右边
+/deep/.ant-collapse .ant-collapse-item .ant-collapse-header .anticon {
+  left: initial;
+  right: 16px;
+}
+/deep/.ant-collapse-content {
+  background: #f5f6f9;
+}
+/deep/ .ant-collapse {
+  border: none;
+  background: #f5f6f9;
+}
+/deep/.ant-collapse > .ant-collapse-item {
+  border-bottom: none;
+}
+/deep/ .ant-collapse {
+  height: 100%;
+  overflow-y: auto;
+}
+// '检测'的样式
+/deep/.ant-btn-primary {
+  border: none;
+  border-radius: 0;
+}
+/deep/.ant-input-group-addon {
+  width: 64px;
+  border-radius: 0 4px 4px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.imgRequire {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.25);
+}
+.preText {
+  // white-space: pre-wrap;
+  // word-wrap: break-word;
+  overflow-y: auto;
+  height: 340px;
+  line-height: 30px;
+}
+
+// '一键复制'后的背景色
+::selection {
+  color: black;
+  background: none;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.rightPart {
+  .code {
+    width: 360px;
+    height: 594px;
+    text-align: left;
+    padding: 0 20px;
+    background: #f5f6f9;
+    overflow: auto;
+    .line {
+      border-bottom: 1px solid #e2e7f1;
+      margin: 0 -20px 10px -20px;
+      line-height: 54px;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      button {
+        width: 88px;
+      }
+    }
+    .dataWrap {
+      text-align: left;
+      height: 85%;
+      word-break: break-all;
+      overflow: auto;
+      margin-left: -106px;
+      // white-space: pre-wrap;
+      // word-wrap: break-word;
+    }
+  }
+}
